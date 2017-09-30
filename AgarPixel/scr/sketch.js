@@ -7,8 +7,10 @@ var total_balls;
 var max_balls = 25;
 var change_colour;
 var speed;
+var restart;
 
 function setup(){
+	restart = 0;
 	food_scl = 20;
 	speed = 0.01;
 	score = 0;
@@ -59,12 +61,16 @@ function draw(){
   	}
   	else{
   		fill(255,255,255);
+  		textStyle(BOLD);
+	  	textSize(20);
+  		text("Score: " + score, width-120, height-20);
   		textSize(100);
   		textStyle(BOLD);
 		text("GAME OVER",width/4,height/2);
-		textSize(50);
-		text("Your score: " + score,width/4+150,height/2+80);
+		textSize(30);
+		text("Press ENTER to restart.",width/4+140,height/2+80);
 		noLoop();
+		restart = 1;
   	}
 }
 
@@ -115,6 +121,13 @@ function keyPressed(){
 	}
 	else if(keyCode == LEFT_ARROW){
 		snake.left();
+	}
+
+	else if(keyCode == ENTER){
+		if(restart){
+			setup();
+			loop();
+		}
 	}
 }
 
