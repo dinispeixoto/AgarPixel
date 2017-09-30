@@ -18,6 +18,7 @@ function setup(){
 	setupFood();
 	frameRate(60);
 	change_colour = 1;
+	noCursor();
 }
 
 function setupSnake(){
