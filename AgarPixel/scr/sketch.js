@@ -22,7 +22,7 @@ function setup(){
 
 function setupSnake(){
 	snake = new Snake();
-	snake.goal = Math.floor(Math.random() * 6) + 1;
+	snake.goal = Math.floor(Math.random() * 5) + 1;
 }
 
 function setupFood(){
@@ -73,9 +73,15 @@ function drawFood(){
 }
 
 function updateGoal(){
-	new_goal = Math.floor(Math.random() * 6) + 1;
-	if(new_goal == snake.goal) snake.goal = (new_goal++)%6;
+	console.log("ANTIGO GOAL: " + snake.goal);
+	new_goal = Math.floor(Math.random() * 5) + 1;
+	console.log("new goal: " + new_goal);
+	if(new_goal == snake.goal)
+		snake.goal = (new_goal++)%6;
 	else snake.goal = new_goal;
+
+	if(!snake.goal) snake.goal = 6;
+	console.log("NOVO GOAL: " + snake.goal);
 	change_colour = 0;
 	speed*=1.2;
 	food_scl+=5;
