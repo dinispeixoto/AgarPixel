@@ -1,6 +1,6 @@
 # AgarPixel
 
-Based on Agar.io, AgarPixel was created by my own while attending on Pixels Camp (2017). This was the most fun way I found to learn some basics about Javascript.
+Based on Agar.io, AgarPixel was created by myself while attending Pixels Camp (2017). This was the most fun way I found to learn some basics about Javascript.
 
 ###### P.S: There's a lot of messy code over here. 
 ____
