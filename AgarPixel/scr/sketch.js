@@ -1,3 +1,4 @@
+//variable declaration
 var snake;
 var scl = 30;
 var food_scl;
@@ -109,6 +110,7 @@ function addRandomFood(indice){
 	food_list[indice] = new Food(c*scl,r*scl,xspeed,yspeed,food_scl,colour);
 }
 
+//Keyboard Controls and Restart button
 function keyPressed(){
 	if(keyCode == UP_ARROW){
 		snake.up();
