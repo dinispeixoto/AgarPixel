@@ -81,7 +81,7 @@ function drawFood(){
 
 function updateGoal(){
 	console.log("ANTIGO GOAL: " + pixel.goal);
-	new_goal = Math.floor(Math.random() * 5) + 1;
+	new_goal = Math.floor(Math.random() * 6) + 1;
 	console.log("new goal: " + new_goal);
 	if(new_goal == pixel.goal)
 		pixel.goal = (new_goal++)%6;
