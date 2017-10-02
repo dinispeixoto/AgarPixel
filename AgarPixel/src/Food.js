@@ -1,5 +1,3 @@
-//Functions related to the food of the game
-
 function Food(a,b,c,d,e,f){
 	this.x = a;
 	this.y = b;

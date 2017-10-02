@@ -1,14 +1,13 @@
-function Snake(){
+function Pixel(){
 	this.x = scl/2;
 	this.y = scl/2;
-	this.size = 0;
 	this.xspeed = 0;
 	this.yspeed = 0;
 	this.angle = 0.0;
 	this.goal;
 
 	this.up = function(){
-		this.yspeed += -0.1;
+		this.yspeed -= 0.1;
 	}
 
 	this.down = function(){
@@ -20,7 +19,7 @@ function Snake(){
 	}
 
 	this.left = function(){
-		this.xspeed += -0.1;
+		this.xspeed -= 0.1;
 	}
 
 	this.eat = function(pos){
@@ -70,7 +69,6 @@ function Snake(){
 		angle1 = atan2(dy, dx);
 		this.x = mouseX - (cos(angle1) );
 		this.y = mouseY - (sin(angle1) ); 
-		//this.update();
 		this.show();
 	}
 }
