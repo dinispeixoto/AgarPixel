@@ -109,11 +109,7 @@ function addRandomFood(indice){
 	food_list[indice] = new Food(c*scl,r*scl,xspeed,yspeed,food_scl,colour);
 }
 
-<<<<<<< HEAD:AgarPixel/src/sketch.js
 
-=======
-//Keyboard Controls and Restart button
->>>>>>> 186439608334afb494f21ebcbbec7e6184fa8195:AgarPixel/scr/sketch.js
 function keyPressed(){
 	if(keyCode == UP_ARROW){
 		pixel.up();
