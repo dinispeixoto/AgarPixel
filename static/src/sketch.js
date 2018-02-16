@@ -80,15 +80,15 @@ function drawFood(){
 }
 
 function updateGoal(){
-	console.log("ANTIGO GOAL: " + pixel.goal);
+	//console.log("ANTIGO GOAL: " + pixel.goal);
 	new_goal = Math.floor(Math.random() * 6) + 1;
-	console.log("new goal: " + new_goal);
+	//console.log("new goal: " + new_goal);
 	if(new_goal == pixel.goal)
 		pixel.goal = (new_goal++)%6;
 	else pixel.goal = new_goal;
 
 	if(!pixel.goal) pixel.goal = 6;
-	console.log("NOVO GOAL: " + pixel.goal);
+	//console.log("NOVO GOAL: " + pixel.goal);
 	change_colour = 0;
 	speed*=1.2;
 	food_scl+=5;
